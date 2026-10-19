@@ -19,5 +19,8 @@ dependencies {
 shadowJar {
     dependencies {
         include(dependency("io.github.gonalez.znpcs:.*"))
+        // Not provided by the server.
+        include(dependency("com.ryanharter.auto.value:auto-value-gson-runtime:.*"))
+        include(dependency("io.sweers.autotransient:autotransient:.*"))
     }
 }
